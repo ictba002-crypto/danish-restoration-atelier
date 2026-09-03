@@ -9,6 +9,10 @@ import designerWegner from "@/assets/designer-wegner.jpg";
 import designerJuhl from "@/assets/designer-juhl.jpg";
 import designerMogensen from "@/assets/designer-mogensen.jpg";
 import designerBaughman from "@/assets/designer-baughman.jpg";
+import designerGrossman from "@/assets/designer-grossman.jpg";
+import designerNelson from "@/assets/designer-nelson.jpg";
+import designerKofodLarsen from "@/assets/designer-kofod-larsen.jpg";
+import designerKnoll from "@/assets/designer-knoll.jpg";
 import type { Piece } from "@/components/product-card";
 
 
