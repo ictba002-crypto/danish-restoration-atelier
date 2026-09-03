@@ -236,21 +236,32 @@ function Home() {
           <h2 className="mt-4 max-w-xl text-3xl leading-tight sm:text-4xl">
             The hands behind the century
           </h2>
-          <div className="mt-14 grid gap-px bg-bone/15 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {designers.map((d) => (
-              <Link key={d.name} to="/" className="group bg-ink p-8 transition-colors hover:bg-walnut">
-                <p className="font-display text-6xl leading-none text-brass/40 transition-colors group-hover:text-brass">
-                  {d.name
-                    .split(" ")
-                    .map((w) => w[0])
-                    .join("")}
-                </p>
-                <h3 className="mt-8 text-2xl">{d.name}</h3>
-                <p className="label-caps mt-2 text-bone/45">{d.years}</p>
-                <p className="mt-4 text-sm leading-relaxed text-bone/70">{d.bio}</p>
+              <Link
+                key={d.name}
+                to="/"
+                className="group relative overflow-hidden bg-ink transition-colors hover:bg-walnut"
+              >
+                <div className="img-reveal aspect-square w-full">
+                  <img
+                    src={d.image}
+                    alt={`Portrait of ${d.name}`}
+                    loading="lazy"
+                    width={1024}
+                    height={1024}
+                    className="h-full w-full object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-100"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-6">
+                  <h3 className="text-2xl text-bone">{d.name}</h3>
+                  <p className="label-caps mt-1 text-bone/60">{d.years}</p>
+                </div>
               </Link>
             ))}
           </div>
+
         </div>
       </section>
 
