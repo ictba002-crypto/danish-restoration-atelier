@@ -5,7 +5,12 @@ import p4 from "@/assets/p4.jpg";
 import before from "@/assets/before.jpg";
 import after from "@/assets/after.jpg";
 import detail from "@/assets/detail-joinery.jpg";
+import designerWegner from "@/assets/designer-wegner.jpg";
+import designerJuhl from "@/assets/designer-juhl.jpg";
+import designerMogensen from "@/assets/designer-mogensen.jpg";
+import designerBaughman from "@/assets/designer-baughman.jpg";
 import type { Piece } from "@/components/product-card";
+
 
 export const pieces: Piece[] = [
   {
