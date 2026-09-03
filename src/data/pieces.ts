@@ -78,5 +78,29 @@ export const designers = [
     bio: "American mid-century warmth: low profiles, chrome, and California ease.",
     image: designerBaughman,
   },
+  {
+    name: "Greta M. Grossman",
+    years: "1906 – 1999",
+    bio: "Swedish-Californian modernism: playful lines, brass necks, and the light of the West Coast.",
+    image: designerGrossman,
+  },
+  {
+    name: "George Nelson",
+    years: "1908 – 1986",
+    bio: "Architect, writer, and design director who gave American modernism its optimistic clarity.",
+    image: designerNelson,
+  },
+  {
+    name: "Ib Kofod-Larsen",
+    years: "1921 – 2003",
+    bio: "Danish sculptural seating and cabinetry, refined for Swedish production and global living.",
+    image: designerKofodLarsen,
+  },
+  {
+    name: "Florence Knoll",
+    years: "1917 – 2019",
+    bio: "The planning unit that defined the modern office — disciplined, elegant, impeccably proportioned.",
+    image: designerKnoll,
+  },
 ];
 
