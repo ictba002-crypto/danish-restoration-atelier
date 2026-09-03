@@ -200,17 +200,30 @@ function ProductDetail() {
       {/* Designer spotlight */}
       <section className="bg-ink text-bone">
         <div className="mx-auto flex max-w-[1440px] flex-col gap-10 px-6 py-20 lg:flex-row lg:items-center lg:justify-between lg:px-10">
-          <div className="max-w-2xl">
-            <p className="label-caps text-brass">Designer Spotlight</p>
-            <h2 className="mt-4 text-3xl lg:text-4xl">{designer.name}</h2>
-            <p className="label-caps mt-2 text-bone/45">{designer.years}</p>
-            <p className="mt-5 text-base leading-relaxed text-bone/75">{designer.bio}</p>
+          <div className="flex max-w-3xl gap-8">
+            <div className="hidden shrink-0 overflow-hidden sm:block sm:w-32 md:w-40">
+              <img
+                src={designer.image}
+                alt={`Portrait of ${designer.name}`}
+                loading="lazy"
+                width={200}
+                height={200}
+                className="aspect-square w-full object-cover"
+              />
+            </div>
+            <div>
+              <p className="label-caps text-brass">Designer Spotlight</p>
+              <h2 className="mt-4 text-3xl lg:text-4xl">{designer.name}</h2>
+              <p className="label-caps mt-2 text-bone/45">{designer.years}</p>
+              <p className="mt-5 text-base leading-relaxed text-bone/75">{designer.bio}</p>
+            </div>
           </div>
           <Link to="/" className="btn-brass shrink-0">
             All {designer.name.split(" ").slice(-1)} pieces
           </Link>
         </div>
       </section>
+
 
       {/* Related */}
       <section className="mx-auto max-w-[1440px] px-6 py-24 lg:px-10 lg:py-28">
