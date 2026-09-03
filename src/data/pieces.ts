@@ -5,14 +5,14 @@ import p4 from "@/assets/p4.jpg";
 import before from "@/assets/before.jpg";
 import after from "@/assets/after.jpg";
 import detail from "@/assets/detail-joinery.jpg";
-import designerWegner from "@/assets/designer-wegner.jpg";
-import designerJuhl from "@/assets/designer-juhl.jpg";
-import designerMogensen from "@/assets/designer-mogensen.jpg";
-import designerBaughman from "@/assets/designer-baughman.jpg";
-import designerGrossman from "@/assets/designer-grossman.jpg";
-import designerNelson from "@/assets/designer-nelson.jpg";
-import designerKofodLarsen from "@/assets/designer-kofod-larsen.jpg";
-import designerKnoll from "@/assets/designer-knoll.jpg";
+import pieceWegner from "@/assets/piece-wegner.jpg";
+import pieceJuhl from "@/assets/piece-juhl.jpg";
+import pieceMogensen from "@/assets/piece-mogensen.jpg";
+import pieceBaughman from "@/assets/piece-baughman.jpg";
+import pieceGrossman from "@/assets/piece-grossman.jpg";
+import pieceNelson from "@/assets/piece-nelson.jpg";
+import pieceKofodLarsen from "@/assets/piece-kofod-larsen.jpg";
+import pieceKnoll from "@/assets/piece-knoll.jpg";
 import type { Piece } from "@/components/product-card";
 
 
