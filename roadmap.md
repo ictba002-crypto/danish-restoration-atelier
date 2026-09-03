@@ -6,4 +6,5 @@
 - [x] Build product detail page
 - [x] Wire shared header/footer into root layout
 - [x] Add designer portrait photos beside designer names
+- [x] Expand designer grid to all 8 designers from reference
 - [x] Verify build and preview
