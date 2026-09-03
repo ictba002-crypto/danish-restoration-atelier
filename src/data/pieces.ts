@@ -5,7 +5,12 @@ import p4 from "@/assets/p4.jpg";
 import before from "@/assets/before.jpg";
 import after from "@/assets/after.jpg";
 import detail from "@/assets/detail-joinery.jpg";
+import designerWegner from "@/assets/designer-wegner.jpg";
+import designerJuhl from "@/assets/designer-juhl.jpg";
+import designerMogensen from "@/assets/designer-mogensen.jpg";
+import designerBaughman from "@/assets/designer-baughman.jpg";
 import type { Piece } from "@/components/product-card";
+
 
 export const pieces: Piece[] = [
   {
@@ -49,20 +54,25 @@ export const designers = [
     name: "Hans J. Wegner",
     years: "1914 – 2007",
     bio: "The master of the chair — over 500 designs built on joinery so exact it needs no ornament.",
+    image: designerWegner,
   },
   {
     name: "Finn Juhl",
     years: "1912 – 1989",
     bio: "Sculptural, almost surrealist forms that freed the seat and back from the frame.",
+    image: designerJuhl,
   },
   {
     name: "Børge Mogensen",
     years: "1914 – 1972",
     bio: "Honest oak and teak cabinetry designed for real Danish homes, built to outlive them.",
+    image: designerMogensen,
   },
   {
     name: "Milo Baughman",
     years: "1923 – 2003",
     bio: "American mid-century warmth: low profiles, chrome, and California ease.",
+    image: designerBaughman,
   },
 ];
+
