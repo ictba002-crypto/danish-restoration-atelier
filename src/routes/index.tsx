@@ -109,7 +109,7 @@ function Home() {
               We travel Denmark and Scandinavia for pieces worth saving, then return them to
               their original standard in our own LA workshop.
             </p>
-            <Link to="/pieces/$slug" params={{ slug: pieces[0].slug }} className="btn-brass mt-10">
+            <Link to="/pieces/$slug" params={{ slug: pieces[0]!.slug }} className="btn-brass mt-10">
               Explore the Collection
             </Link>
           </div>
@@ -246,17 +246,18 @@ function Home() {
                 <div className="img-reveal aspect-square w-full">
                   <img
                     src={d.image}
-                    alt={`Portrait of ${d.name}`}
+                    alt={`${d.signature} in the style of ${d.name}`}
                     loading="lazy"
                     width={1024}
                     height={1024}
-                    className="h-full w-full object-cover opacity-80 transition-opacity duration-500 group-hover:opacity-100"
+                    className="h-full w-full object-cover opacity-90 transition-opacity duration-500 group-hover:opacity-100"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/25 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-6">
                   <h3 className="text-2xl text-bone">{d.name}</h3>
                   <p className="label-caps mt-1 text-bone/60">{d.years}</p>
+                  <p className="mt-3 font-display text-base italic text-brass">{d.signature}</p>
                 </div>
               </Link>
             ))}
