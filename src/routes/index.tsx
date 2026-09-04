@@ -109,7 +109,7 @@ function Home() {
               We travel Denmark and Scandinavia for pieces worth saving, then return them to
               their original standard in our own LA workshop.
             </p>
-            <Link to="/pieces/$slug" params={{ slug: pieces[0].slug }} className="btn-brass mt-10">
+            <Link to="/pieces/$slug" params={{ slug: pieces[0]!.slug }} className="btn-brass mt-10">
               Explore the Collection
             </Link>
           </div>
