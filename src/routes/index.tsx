@@ -41,7 +41,7 @@ const categories = [
 
 const stats = [
   { value: "15+", label: "Years of restoration craft" },
-  { value: "4,200", label: "Pieces restored in-house" },
+  { value: "8,000", label: "Pieces restored in-house" },
   { value: "80+", label: "Designers represented" },
 ];
 
