@@ -84,6 +84,15 @@ const testimonials = [
   },
 ];
 
+const instagramPosts = [
+  { image: restorationImages.detail, caption: "Hand-oiling the joinery on a 1961 teak lounge" },
+  { image: pieces[0]!.image, caption: "Møller dining table back on the gallery floor" },
+  { image: catSeating, caption: "A morning corner of the Hyperion Avenue showroom" },
+  { image: restorationImages.before, caption: "Before: sun-bleached teak, cracked rear rail" },
+  { image: catLighting, caption: "Patinated brass lighting, freshly rewired" },
+  { image: pieces[2]!.image, caption: "Sliding-door teak credenza, doors re-hung by hand" },
+];
+
 function Home() {
   return (
     <>
