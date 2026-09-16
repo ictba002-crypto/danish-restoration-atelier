@@ -143,14 +143,30 @@ function Home() {
                 it and fifty more ahead.
               </p>
             </div>
-            <div className="mt-10 border border-border bg-background px-6 py-6 sm:px-8">
-              <p className="label-caps text-muted-foreground">The Shop</p>
+            <a
+              href="#visit"
+              className="group mt-10 block border border-border bg-background px-6 py-6 transition-colors hover:border-brass/60 sm:px-8"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <p className="label-caps text-muted-foreground transition-colors group-hover:text-brass">
+                  The Shop
+                </p>
+                <span
+                  className="label-caps shrink-0 text-brass"
+                  aria-hidden="true"
+                >
+                  ↓
+                </span>
+              </div>
               <p className="mt-3 text-sm leading-relaxed text-ink/80">
                 2103 Hyperion Avenue
                 <br />
                 Los Angeles, CA 90027
               </p>
-            </div>
+              <p className="label-caps mt-4 text-walnut underline decoration-brass/60 underline-offset-4">
+                View shop details
+              </p>
+            </a>
           </div>
           <dl className="grid grid-cols-2 gap-px self-stretch bg-border">
             {stats.map((s) => (
@@ -365,7 +381,7 @@ function Home() {
       </section>
 
       {/* Visit the gallery */}
-      <section className="bg-parchment">
+      <section id="visit" className="scroll-mt-24 bg-parchment">
         <div className="mx-auto grid max-w-[1440px] items-center gap-14 px-6 py-24 lg:grid-cols-2 lg:px-10 lg:py-32">
           <div>
             <p className="label-caps text-brass">Visit Us</p>
