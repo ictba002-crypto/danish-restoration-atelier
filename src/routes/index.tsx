@@ -331,6 +331,100 @@ function Home() {
         </div>
       </section>
 
+      {/* Visit the gallery */}
+      <section className="bg-parchment">
+        <div className="mx-auto grid max-w-[1440px] items-center gap-14 px-6 py-24 lg:grid-cols-2 lg:px-10 lg:py-32">
+          <div>
+            <p className="label-caps text-brass">Visit Us</p>
+            <h2 className="mt-4 text-3xl leading-tight text-ink sm:text-4xl lg:text-5xl">
+              One gallery. Silver Lake, Los Angeles.
+            </h2>
+            <p className="mt-8 max-w-lg text-base leading-relaxed text-muted-foreground">
+              Everything we restore is sold from a single showroom on Hyperion Avenue — the
+              same building as the workshop. Walk in, sit in the chairs, and meet the people
+              who rebuilt them.
+            </p>
+            <address className="mt-10 space-y-6 text-sm not-italic text-ink/80">
+              <div className="border-t border-brass/40 pt-4">
+                <p className="label-caps text-muted-foreground">Address</p>
+                <p className="mt-2">
+                  2103 Hyperion Avenue, Los Angeles, CA 90027
+                </p>
+              </div>
+              <div className="border-t border-brass/40 pt-4">
+                <p className="label-caps text-muted-foreground">Gallery Hours</p>
+                <p className="mt-2">
+                  Tuesday – Saturday, 11am – 6pm
+                  <br />
+                  Sunday &amp; Monday by appointment
+                </p>
+              </div>
+              <div className="border-t border-brass/40 pt-4">
+                <p className="label-caps text-muted-foreground">Contact</p>
+                <p className="mt-2">
+                  (323) 555-0119 · studio@danishmodernla.com
+                </p>
+              </div>
+            </address>
+            <a
+              href="https://maps.google.com/?q=2103+Hyperion+Avenue+Los+Angeles+CA+90027"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline-ink mt-10"
+            >
+              Get Directions
+            </a>
+          </div>
+          <div className="border border-border p-2">
+            <iframe
+              title="Map to Danish Modern L.A. at 2103 Hyperion Avenue, Los Angeles"
+              src="https://www.google.com/maps?q=2103%20Hyperion%20Avenue%2C%20Los%20Angeles%2C%20CA%2090027&output=embed"
+              loading="lazy"
+              className="aspect-[4/3] w-full grayscale-[30%]"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram */}
+      <section className="mx-auto max-w-[1440px] px-6 py-24 lg:px-10 lg:py-32">
+        <div className="rule-brass flex flex-wrap items-end justify-between gap-4 pt-8">
+          <div>
+            <p className="label-caps text-brass">Instagram</p>
+            <h2 className="mt-3 text-3xl text-ink sm:text-4xl">@danishmodernla</h2>
+          </div>
+          <a
+            href="https://www.instagram.com/danishmodernla/"
+            target="_blank"
+            rel="noreferrer"
+            className="label-caps link-underline text-ink/70"
+          >
+            Follow the studio
+          </a>
+        </div>
+        <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          {instagramPosts.map((post) => (
+            <a
+              key={post.caption}
+              href="https://www.instagram.com/danishmodernla/"
+              target="_blank"
+              rel="noreferrer"
+              className="img-reveal group relative block"
+            >
+              <img
+                src={post.image}
+                alt={post.caption}
+                loading="lazy"
+                width={640}
+                height={640}
+                className="aspect-square w-full object-cover"
+              />
+              <span className="absolute inset-0 bg-ink/0 transition-colors duration-500 group-hover:bg-ink/35" />
+            </a>
+          ))}
+        </div>
+      </section>
+
       {/* Newsletter */}
       <section className="bg-teak text-bone">
         <div className="mx-auto flex max-w-[1440px] flex-col items-start justify-between gap-8 px-6 py-20 lg:flex-row lg:items-center lg:px-10">
