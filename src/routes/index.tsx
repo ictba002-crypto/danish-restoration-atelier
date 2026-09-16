@@ -143,7 +143,7 @@ function Home() {
                 it and fifty more ahead.
               </p>
             </div>
-            <div className="mt-10 border border-border bg-background px-6 py-6 sm:px-8 lg:mt-0">
+            <div className="mt-10 border border-border bg-background px-6 py-6 sm:px-8">
               <p className="label-caps text-muted-foreground">The Shop</p>
               <p className="mt-3 text-sm leading-relaxed text-ink/80">
                 2103 Hyperion Avenue
