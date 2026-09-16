@@ -128,43 +128,22 @@ function Home() {
 
       {/* Brand story */}
       <section className="mx-auto max-w-[1440px] px-6 py-24 lg:px-10 lg:py-32">
-        <div className="grid gap-16 lg:grid-cols-[1.2fr_1fr]">
-          <div>
-            <p className="label-caps text-brass">Est. 2009 · Los Angeles</p>
-            <h2 className="mt-6 max-w-2xl text-3xl leading-tight text-ink sm:text-4xl lg:text-5xl">
-              Not reproductions. Not a warehouse. A workshop with a gallery attached.
-            </h2>
-            <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground">
-              Twice a year we buy across Denmark, Sweden and Norway — estates, dealers, the
-              back rooms of old cabinetmakers. Everything comes home to Hyperion Avenue, where
-              our craftsmen strip, re-glue, re-cane and re-upholster using period-correct
-              methods and materials. What you take home is one of one, with fifty years behind
-              it and fifty more ahead.
-            </p>
-          </div>
-          <div className="self-start">
-            <dl className="grid grid-cols-2 gap-px bg-border lg:grid-cols-1">
-              {stats.map((s) => (
-                <div key={s.label} className="bg-background px-6 py-8 sm:px-8">
-                  <dt className="font-display text-4xl leading-none text-walnut sm:text-5xl">
-                    {s.value}
-                  </dt>
-                  <dd className="label-caps mt-3 text-muted-foreground">
-                    {s.stars ? (
-                      <>
-                        <span className="text-brass" aria-hidden="true">
-                          ★★★★★
-                        </span>
-                        <span className="mt-1 block">{s.label}</span>
-                      </>
-                    ) : (
-                      s.label
-                    )}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-            <div className="border border-t-0 border-border bg-background px-6 py-8 sm:px-8">
+        <div className="grid gap-12 lg:grid-cols-[1.15fr_1fr] lg:gap-16">
+          <div className="flex flex-col justify-between">
+            <div>
+              <p className="label-caps text-brass">Est. 2009 · Los Angeles</p>
+              <h2 className="mt-6 max-w-2xl text-3xl leading-tight text-ink sm:text-4xl lg:text-5xl">
+                Not reproductions. Not a warehouse. A workshop with a gallery attached.
+              </h2>
+              <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground">
+                Twice a year we buy across Denmark, Sweden and Norway — estates, dealers, the
+                back rooms of old cabinetmakers. Everything comes home to Hyperion Avenue, where
+                our craftsmen strip, re-glue, re-cane and re-upholster using period-correct
+                methods and materials. What you take home is one of one, with fifty years behind
+                it and fifty more ahead.
+              </p>
+            </div>
+            <div className="mt-10 border border-border bg-background px-6 py-6 sm:px-8 lg:mt-0">
               <p className="label-caps text-muted-foreground">The Shop</p>
               <p className="mt-3 text-sm leading-relaxed text-ink/80">
                 2103 Hyperion Avenue
@@ -173,6 +152,27 @@ function Home() {
               </p>
             </div>
           </div>
+          <dl className="grid grid-cols-2 gap-px self-stretch bg-border">
+            {stats.map((s) => (
+              <div key={s.label} className="flex flex-col justify-center bg-background px-6 py-8 sm:px-8">
+                <dt className="font-display text-4xl leading-none text-walnut sm:text-5xl">
+                  {s.value}
+                </dt>
+                <dd className="label-caps mt-3 text-muted-foreground">
+                  {s.stars ? (
+                    <>
+                      <span className="text-brass" aria-hidden="true">
+                        ★★★★★
+                      </span>
+                      <span className="mt-1 block">{s.label}</span>
+                    </>
+                  ) : (
+                    s.label
+                  )}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </section>
 
