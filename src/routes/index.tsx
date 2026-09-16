@@ -43,6 +43,7 @@ const stats = [
   { value: "15+", label: "Years of restoration craft" },
   { value: "8,000", label: "Pieces restored in-house" },
   { value: "80+", label: "Designers represented" },
+  { value: "5.0", label: "549 five-star reviews", stars: true } as const,
 ];
 
 const trust = [
@@ -141,14 +142,37 @@ function Home() {
               it and fifty more ahead.
             </p>
           </div>
-          <dl className="grid grid-cols-1 gap-px self-start bg-border">
-            {stats.map((s) => (
-              <div key={s.label} className="bg-background px-8 py-8">
-                <dt className="font-display text-5xl leading-none text-walnut">{s.value}</dt>
-                <dd className="label-caps mt-3 text-muted-foreground">{s.label}</dd>
-              </div>
-            ))}
-          </dl>
+          <div className="self-start">
+            <dl className="grid grid-cols-2 gap-px bg-border lg:grid-cols-1">
+              {stats.map((s) => (
+                <div key={s.label} className="bg-background px-6 py-8 sm:px-8">
+                  <dt className="font-display text-4xl leading-none text-walnut sm:text-5xl">
+                    {s.value}
+                  </dt>
+                  <dd className="label-caps mt-3 text-muted-foreground">
+                    {s.stars ? (
+                      <>
+                        <span className="text-brass" aria-hidden="true">
+                          ★★★★★
+                        </span>
+                        <span className="mt-1 block">{s.label}</span>
+                      </>
+                    ) : (
+                      s.label
+                    )}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <div className="border border-t-0 border-border bg-background px-6 py-8 sm:px-8">
+              <p className="label-caps text-muted-foreground">The Shop</p>
+              <p className="mt-3 text-sm leading-relaxed text-ink/80">
+                2103 Hyperion Avenue
+                <br />
+                Los Angeles, CA 90027
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
