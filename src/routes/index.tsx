@@ -39,11 +39,11 @@ const categories = [
   { label: "Fine Art", count: "29 works", image: catArt },
 ];
 
-const stats = [
+const stats: { value: string; label: string; stars?: boolean }[] = [
   { value: "15+", label: "Years of restoration craft" },
   { value: "8,000", label: "Pieces restored in-house" },
   { value: "80+", label: "Designers represented" },
-  { value: "5.0", label: "549 five-star reviews", stars: true } as const,
+  { value: "5.0", label: "549 five-star reviews", stars: true },
 ];
 
 const trust = [
