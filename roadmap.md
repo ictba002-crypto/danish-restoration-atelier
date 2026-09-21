@@ -8,4 +8,4 @@
 - [x] Show a signature piece image beside each designer name (instead of portraits)
 - [x] Expand designer grid to all 8 designers from reference
 - [x] Verify build and preview
-
+- [ ] Update PDP purchase actions and add the four requested proof points
