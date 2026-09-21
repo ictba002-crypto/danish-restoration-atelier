@@ -474,6 +474,34 @@ function Home() {
         </div>
       </section>
 
+      {/* Membership — The Antique Circle */}
+      <section className="bg-ink text-bone">
+        <div className="mx-auto grid max-w-[1440px] gap-14 px-6 py-24 lg:grid-cols-[1fr_1.1fr] lg:gap-20 lg:px-10 lg:py-32">
+          <div>
+            <p className="label-caps text-brass">Membership</p>
+            <h2 className="mt-4 max-w-md text-3xl leading-tight sm:text-4xl lg:text-5xl">
+              Join The Antique Circle
+            </h2>
+            <p className="mt-8 max-w-md text-base leading-relaxed text-bone/70">
+              A quiet circle for the people who collect seriously. Members see each
+              restoration first, receive private pricing on selected pieces, and are
+              invited into the workshop before a piece ever reaches the floor.
+            </p>
+            <Link to="/circle" className="btn-brass mt-10">
+              Become a Member
+            </Link>
+          </div>
+          <div className="grid gap-10 self-start sm:grid-cols-2">
+            {memberBenefits.map((b) => (
+              <div key={b.title} className="border-t border-brass/40 pt-5">
+                <h3 className="text-xl text-bone">{b.title}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-bone/70">{b.copy}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Newsletter */}
       <section className="bg-teak text-bone">
         <div className="mx-auto flex max-w-[1440px] flex-col items-start justify-between gap-8 px-6 py-20 lg:flex-row lg:items-center lg:px-10">
