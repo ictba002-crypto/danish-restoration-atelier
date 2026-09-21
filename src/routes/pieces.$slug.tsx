@@ -26,6 +26,10 @@ export const Route = createFileRoute("/pieces/$slug")({
         { name: "description", content: description },
         { property: "og:title", content: title },
         { property: "og:description", content: description },
+        { property: "og:type", content: "product" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: description },
       ],
     };
   },
@@ -49,6 +53,13 @@ const restorationNotes = [
     label: "Left original",
     copy: "Maker's stamp, original brass fittings and the patina on the arm caps — the marks that prove the piece lived.",
   },
+];
+
+const proofPoints = [
+  { value: "15+", label: "Years of restoration craft" },
+  { value: "8,000", label: "Pieces restored in-house" },
+  { value: "80+", label: "Designers represented" },
+  { value: "5.0", label: "549 five-star reviews", stars: true },
 ];
 
 function ProductDetail() {
@@ -139,13 +150,36 @@ function ProductDetail() {
             or from {monthly(piece.price)}/mo with Affirm
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <button className="btn-brass">Add to Cart</button>
-            <button className="btn-outline-ink">Inquire</button>
-            <button className="btn-outline-ink">Request a Hold</button>
+          <div className="mt-8">
+            <button className="btn-brass w-full">Add to Cart</button>
+            <div className="mt-3 grid gap-3 sm:grid-cols-3">
+              <button className="btn-outline-ink min-w-0 px-3">Inquire</button>
+              <button className="btn-outline-ink min-w-0 px-3">Request a Call</button>
+              <Link to="/" hash="visit" className="btn-outline-ink min-w-0 px-3 text-center">
+                Buy from Store
+              </Link>
+            </div>
           </div>
 
-          <div className="mt-10 border border-brass/40 bg-parchment p-6">
+          <dl className="mt-8 grid grid-cols-2 gap-px border border-olive/20 bg-olive/20">
+            {proofPoints.map((point) => (
+              <div key={point.label} className="bg-background px-4 py-5 sm:px-5">
+                <dt className="font-display text-2xl leading-none text-walnut sm:text-3xl">
+                  {point.value}
+                </dt>
+                <dd className="label-caps mt-2 text-muted-foreground">
+                  {point.stars && (
+                    <span className="mb-1 block text-brass" aria-hidden="true">
+                      ★★★★★
+                    </span>
+                  )}
+                  {point.label}
+                </dd>
+              </div>
+            ))}
+          </dl>
+
+          <div className="mt-8 border border-brass/40 bg-parchment p-6">
             <p className="label-caps text-brass">Provenance & Authenticity</p>
             <p className="mt-3 font-display text-xl leading-snug text-ink">
               Authenticated by our Mid-Century Modern experts, in the trade since 2009.
