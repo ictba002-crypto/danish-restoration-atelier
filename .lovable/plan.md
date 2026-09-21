@@ -1,9 +1,9 @@
 # Product Page Purchase & Trust Update
 
 ## What will change
-- Replace the current single button row with two balanced rows:
-  - Row 1: **Add to Cart** and **Inquire**
-  - Row 2: **Request a Call** and **Buy from Store**
+- Replace the current single button row with a stronger two-tier hierarchy:
+  - Row 1: one full-width brass **Add to Cart** button
+  - Row 2: three quieter outlined buttons — **Inquire**, **Request a Call**, and **Buy from Store**
 - Remove **Request a Hold** completely.
 - Make the four requested proof points visible directly beneath the purchase actions:
   - 15+ Years of restoration craft
@@ -14,8 +14,8 @@
 - Make **Buy from Store** lead to the detailed shop section on the homepage.
 
 ## Layout
-- Desktop: two equal-width buttons per row and the four trust points in a compact 2×2 grid.
-- Mobile: full-width two-column button rows where labels fit, with trust points stacked for easy reading.
+- Desktop: one wide primary button, then three equal secondary buttons; the four proof points sit in a compact 2×2 grid.
+- Mobile: the primary button stays full width, secondary actions stack cleanly, and proof points remain easy to scan.
 - Use the existing warm gallery styling, with olive only as a restrained accent.
 
 ## Technical details
