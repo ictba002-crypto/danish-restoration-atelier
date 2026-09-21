@@ -145,14 +145,14 @@ function Home() {
             </div>
             <a
               href="#visit"
-              className="group mt-10 block border border-border bg-background px-6 py-6 transition-colors hover:border-brass/60 sm:px-8"
+              className="group mt-10 block border border-olive/25 bg-olive-soft/35 px-6 py-6 transition-colors hover:border-olive/50 hover:bg-olive-soft/55 sm:px-8"
             >
               <div className="flex items-start justify-between gap-4">
-                <p className="label-caps text-muted-foreground transition-colors group-hover:text-brass">
+                <p className="label-caps text-olive">
                   The Shop
                 </p>
                 <span
-                  className="label-caps shrink-0 text-brass"
+                  className="label-caps shrink-0 text-olive"
                   aria-hidden="true"
                 >
                   ↓
@@ -163,7 +163,7 @@ function Home() {
                 <br />
                 Los Angeles, CA 90027
               </p>
-              <p className="label-caps mt-4 text-walnut underline decoration-brass/60 underline-offset-4">
+              <p className="label-caps mt-4 text-walnut underline decoration-olive/50 underline-offset-4 transition-colors group-hover:text-olive">
                 View shop details
               </p>
             </a>
@@ -381,10 +381,10 @@ function Home() {
       </section>
 
       {/* Visit the gallery */}
-      <section id="visit" className="scroll-mt-24 bg-parchment">
+      <section id="visit" className="scroll-mt-24 border-y border-olive/15 bg-parchment">
         <div className="mx-auto grid max-w-[1440px] items-center gap-14 px-6 py-24 lg:grid-cols-2 lg:px-10 lg:py-32">
           <div>
-            <p className="label-caps text-brass">Visit Us</p>
+            <p className="label-caps text-olive">Visit Us</p>
             <h2 className="mt-4 text-3xl leading-tight text-ink sm:text-4xl lg:text-5xl">
               One gallery. Silver Lake, Los Angeles.
             </h2>
